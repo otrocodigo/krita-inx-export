@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=Krita/PythonPlugin
+X-KDE-Library=krita-inx-export
+X-Python-2-Compatible=false
+Name=Krita INX Export
+Comment=Krita INX Export
