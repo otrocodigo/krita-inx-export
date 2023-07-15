@@ -7,7 +7,7 @@ from PyQt5.QtGui import QColor, QImage, QPainter
 MAX_UINT = 4294967295
 NO_TEXTURE = MAX_UINT
 
-META_VERSION = "v0.7.2-97-gc2aaa18"
+META_VERSION = "v0.8.2"
 DEFAULT_PHYSICS = {"pixelsPerMeter": 1000.0, "gravity": 9.8}
 DEFAULT_UVS = [0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0]
 DEFAULT_INDICES = [0, 1, 2, 2, 1, 3]
@@ -115,7 +115,7 @@ class INXDocument:
                 "uuid": (MAX_UINT - 2) - index,
                 "name": node.name(),
                 "type": "Part",
-                "enabled": True,
+                "enabled": node.visible(),
                 "zsort": 0.0,
                 "transform": {
                     "trans": trans,
